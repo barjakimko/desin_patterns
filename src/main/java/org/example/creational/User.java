@@ -6,8 +6,8 @@ import java.util.List;
 //  Założenia:
 //  Buldier jest wykorzystywany do zooptymalizowania dużych
 //  obiektów (z wieloma polami opcjonalnymi). Aby nie stosować
-//  wielu przeładowanych konstuktowrów, gdzie istnieje przeka-
-//  zanie nulli na produkcje- stosuję się Builder.
+//  wielu przeładowanych konstuktowrów, gdzie istnieje możliwość
+//  przekazania nulli na produkcje- stosuję się Builder.
 //  Są dwa sposoby wprowadzenia buldiera:
 //  1. Jako osobna klasa.
 //  2. Jako methoda dla danej klasy.
@@ -17,7 +17,7 @@ import java.util.List;
 //  1. Stworzyć prywatny konstrukor, który przyjmuję obiekt BUILDER
 //  2. Stworzyć wewnętrzną klase Builder, która domyślnie przyjmuję
 //     zadane pola.
-//  3. Stowrzyć metodyć metody (coś ala setery) do ustawiania pól,
+//  3. Stowrzyć metody (coś ala setery) do ustawiania pól,
 //     które zwracają obiekt wewnętrznej klasy (builder).
 //  4. Stowrzyć w wenętrznej klasie metodę build, która wywoła pry-
 //     watny konstuktor, przyjując jako argument obiet wew. klasy!!
