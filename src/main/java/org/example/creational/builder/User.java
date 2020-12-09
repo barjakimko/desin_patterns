@@ -1,4 +1,4 @@
-package org.example.creational;
+package org.example.creational.builder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,7 +93,7 @@ public class User {
             return this;
         }
 
-        public User build(){
+        public User build() {
             return new User(this);
         }
     }
